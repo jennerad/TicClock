@@ -44,11 +44,14 @@ Author: Your Name
 
 html {
 font-size: 16px;
-background: green;
+
 }
 
 body {
+  margin: 0;
+  padding: 0;
   font-family: arial;
+  background: rgba(201, 222, 236, 0.5);
 }
 
 .wholeclock {

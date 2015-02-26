@@ -1,10 +1,6 @@
 // main function
-// $(document).ready(function(){
-//     startTime();
-//     //event handler?
-//     // $('#start').on('click', newGame);
 
-// });
+
 var hClass;
 var mClass;
 var sClass;
@@ -19,6 +15,9 @@ function startTime() {
         //add leading 0 if needed for < 10
     h = addZeroToTime(h);
     m = addZeroToTime(m);
+      // if (m = 00 || m = 10 || m = 20 || m = 30 || m = 40 || m = 50) {
+      //   changeBgColor();
+      // }
     s = addZeroToTime(s);
     hClass = "time" + h;
     mClass = "time" + m;
@@ -27,13 +26,14 @@ function startTime() {
     if (s == 0) {
         s = "60";
         sClass = "time60";
+        // changeBgColor();
     };
         console.log(s);
         console.log(sClass);
     document.getElementById('timeHours').className = hClass;
     document.getElementById('timeMinutes').className = mClass;
     document.getElementById('timeSeconds').className = sClass;
-    var t = setTimeout(function(){startTime()},500);
+    setTimeout(function(){startTime()},500);
 }
 
 function addZeroToTime(i) {
@@ -52,6 +52,24 @@ function twelveHourClock(i) {
 
 
 
+// function runEveryMinute() {
+// function changeBgColor();
+// }
+// fn60sec();
+// setInterval(fn60sec, 60*1000);
+
+
+
+function changeBgColor() {
+    var hue = 'rgba(' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ', 0.5)';
+    // console.log(hue);
+    document.body.style.background = hue;
+}
+
+
+$(document).ready(function(){
+ setInterval(changeBgColor, 10000);
+});
 
 
 
