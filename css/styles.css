@@ -49,26 +49,7 @@ background: green;
 
 body {
   font-family: arial;
-  /*text-align: center;*/
 }
-
-
-/*#plainclock {
-  text-align: center;
-  margin: auto;
-  position: absolute;
-  top:50%;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 600px;
-  font-size: 4em;
-
-}*/
-
-/*#plainclock span:nth-child(even){
-  margin-right:15px;
-}*/
 
 .wholeclock {
     /*background:url('../images/numbersSpritePath.png');*/
@@ -81,21 +62,14 @@ body {
   left: 0;
   right: 0;
   padding: 10em 0;
-/*  height: 200px;
-  width: 100%;*/
-  /*display: inline-block;*/
+
 }
 
 #timeHours, #timeMinutes, #timeSeconds, .colon{
      margin: 5px;
      display: inline-block;
      vertical-align: middle;
-/*  margin: 0 auto;
-  position: relative;
-  top:50%;
-  bottom: 0;
-  left: 0;
-  right: 0;*/
+
 }
 
 /*SPRITES for 0-60*/
