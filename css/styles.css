@@ -196,20 +196,23 @@ body {
 .time01 { background-position: -70px -50px; width: 10px; height: 38px; }
 
 
+@media only screen and max-width: 400px {
 
-@media screen and (max-width: 700px) {
-  (-webkit-min-device-pixel-ratio: 2), 
-  (min-resolution: 192dpi)
 
-#timeHours, #timeMinutes, #timeSeconds, .colon{
-     margin: 1px;
-     display: inline-block;
-     vertical-align: middle;
 
-}
+/*@media only screen and (min-device-pixel-ratio: 1), only screen and (min-resolution: 192dpi) {*/
+
+  #timeHours, #timeMinutes, #timeSeconds, .colon{
+       margin: 0px;
+       padding: 0px;
+       display: inline-block;
+       vertical-align: middle;
+  }
+
   .wholeclock {
       padding: 0;
-      top: 100px;
+      margin: 0;
+      /*top: 100px;*/
 
   }
 }
