@@ -50,22 +50,11 @@ function twelveHourClock(i) {
     return i
 }
 
-
-
-// function runEveryMinute() {
-// function changeBgColor();
-// }
-// fn60sec();
-// setInterval(fn60sec, 60*1000);
-
-
-
 function changeBgColor() {
     var hue = 'rgba(' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ', 0.5)';
     // console.log(hue);
     document.body.style.background = hue;
 }
-
 
 $(document).ready(function(){
  setInterval(changeBgColor, 10000);

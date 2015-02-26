@@ -1,7 +1,6 @@
 /* 
-Project Name: Blank Template
-Client: Your Client
-Author: Your Name
+Project Name: Clock with sprites
+Author: Jennifer Nerad
 */
 
 
@@ -55,7 +54,6 @@ body {
 }
 
 .wholeclock {
-    /*background:url('../images/numbersSpritePath.png');*/
   /*background-position:0 0;*/
   text-align: center;
   margin: 0 auto;
