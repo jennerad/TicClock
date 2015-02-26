@@ -39,7 +39,7 @@ Author: Jennifer Nerad
   padding: 0 10px 10px 0; /* note the padding around a left floated image */
 }
 
-
+/*** STYLES ***/
 
 html {
 font-size: 16px;
@@ -194,3 +194,22 @@ body {
 .time03 { background-position: -352px -47px; width: 49px; height: 44px; }
 .time02 { background-position: -210px -48px; width: 28px; height: 42px; }
 .time01 { background-position: -70px -50px; width: 10px; height: 38px; }
+
+
+
+@media screen and (max-width: 700px) {
+  (-webkit-min-device-pixel-ratio: 2), 
+  (min-resolution: 192dpi)
+
+#timeHours, #timeMinutes, #timeSeconds, .colon{
+     margin: 1px;
+     display: inline-block;
+     vertical-align: middle;
+
+}
+  .wholeclock {
+      padding: 0;
+      top: 100px;
+
+  }
+}
