@@ -28,6 +28,11 @@ function startTime() {
         sClass = "time60";
         // changeBgColor();
     };
+    if (m == 0) {
+        s = "60";
+        sClass = "time60";
+        // changeBgColor();
+    };
         console.log(s);
         console.log(sClass);
     document.getElementById('timeHours').className = hClass;
@@ -57,7 +62,7 @@ function changeBgColor() {
 }
 
 $(document).ready(function(){
- setInterval(changeBgColor, 10000);
+ setInterval(changeBgColor, 6000);
 });
 
 
