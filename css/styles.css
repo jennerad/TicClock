@@ -59,12 +59,12 @@ body {
   /*background-position:0 0;*/
   text-align: center;
   margin: 0 auto;
-  position: relative;
-  top:0;
-  bottom: 0;
+  top:50%;
+  bottom: 50%;
   left: 0;
   right: 0;
-  padding: 10em 0;
+  padding: 0em 0;
+  position: absolute;
 
 }
 
@@ -75,6 +75,29 @@ body {
 
 }
 
+.timePart {
+  width: 150px;
+
+}
+
+.timePartColon {
+  width: 50px;
+}
+
+.flex-parent {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+
+}
+
+.flex-child {
+
+}
 /*SPRITES for 0-60*/
 
 
@@ -197,24 +220,3 @@ body {
 .time02 { background-position: -210px -48px; width: 28px; height: 42px; }
 .time01 { background-position: -70px -50px; width: 10px; height: 38px; }
 
-
-@media only screen and max-width: 400px {
-
-
-
-/*@media only screen and (min-device-pixel-ratio: 1), only screen and (min-resolution: 192dpi) {*/
-
-  #timeHours, #timeMinutes, #timeSeconds, .colon{
-       margin: 0px;
-       padding: 0px;
-       display: inline-block;
-       vertical-align: middle;
-  }
-
-  .wholeclock {
-      padding: 0;
-      margin: 0;
-      /*top: 100px;*/
-
-  }
-}

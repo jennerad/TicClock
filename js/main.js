@@ -29,8 +29,8 @@ function startTime() {
         // changeBgColor();
     };
     if (m == 0) {
-        s = "60";
-        sClass = "time60";
+        m = "60";
+        mClass = "time60";
         // changeBgColor();
     };
         console.log(s);

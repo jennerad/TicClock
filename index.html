@@ -18,13 +18,23 @@
 <body onload="startTime()">
 
 <!-- <br> -->
-    <div class="wholeclock">   
-      <div id="timeHours" class="time04"></div> 
-      <img src="images/colon.png" class="colon">
-      <div id="timeMinutes" class="time20 "></div>  
-      <img src="images/colon.png" class="colon">
-      <div id="timeSeconds" class="time44 "></div>  
-    </div>
+    <section class="flex-parent wholeclock">   
+      <div class="timePart">
+        <div id="timeHours" class="time04"></div> 
+      </div>
+      <div class="timePartColon">
+        <img src="images/colon.png" class="colon">
+      </div>
+      <div class="timePart">
+        <div id="timeMinutes" class="time20 "></div>
+      </div>
+      <div class="timePartColon">
+        <img src="images/colon.png" class="colon">
+      </div>
+      <div class="timePart">
+        <div id="timeSeconds" class="time44 "></div>
+      </div>  
+    </section>
 
 
 <script src="http://code.jquery.com/jquery-latest.min.js"></script>
