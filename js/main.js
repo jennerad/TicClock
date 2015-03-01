@@ -22,7 +22,11 @@ function startTime() {
     hClass = "time" + h;
     mClass = "time" + m;
     sClass = "time" + s;
-
+    if (h == 0) {
+        s = "12";
+        sClass = "time12";
+        // changeBgColor();
+    };
     if (s == 0) {
         s = "60";
         sClass = "time60";
